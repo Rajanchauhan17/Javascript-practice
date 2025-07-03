@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let startnum=parseInt(prompt("enter the start number="))
+        let endnum=parseInt(prompt("enter the end number="))
+        for(let i=startnum;i<=endnum;i++){
+            if(i>1){
+                let isprime=true;
+                for(let j=2;j<i;j++){
+                    if(i%j==0){
+                        isprime=false;
+                        break;
+                    }
+                }
+            if(isprime==true){
+                console.log("prime number intervel=",i)
+            }
+            }
+        }
+    </script>
+</body>
+</html>
